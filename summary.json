@@ -1,0 +1,34 @@
+{
+  "device": "cpu",
+  "torch_version": "2.9.1+cpu",
+  "bm3d_version": "4.0.3",
+  "image_size": 64,
+  "images": [
+    "camera",
+    "astronaut",
+    "coffee",
+    "coins",
+    "moon"
+  ],
+  "sigmas": [
+    15.0,
+    25.0,
+    50.0
+  ],
+  "steps": 900,
+  "demo_steps": 1600,
+  "eval_interval": 25,
+  "demo": {
+    "image": "camera",
+    "sigma": 25.0,
+    "best_step": 850,
+    "best_psnr": 26.857914817161067,
+    "best_ssim": 0.724217148637233,
+    "curve": "results\\curves\\camera_sigma25_early_stopping.png",
+    "has_decline": true
+  },
+  "tables": {
+    "wide": "results\\tables\\results_wide.csv",
+    "long": "results\\tables\\results_long.csv"
+  }
+}
